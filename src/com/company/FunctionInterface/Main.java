@@ -1,4 +1,4 @@
-package com.company;
+package com.company.FunctionInterface;
 
 import java.util.Comparator;
 

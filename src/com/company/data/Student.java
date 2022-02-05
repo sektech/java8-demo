@@ -1,4 +1,4 @@
-package com.company;
+package com.company.data;
 
 import java.util.List;
 
@@ -67,5 +67,9 @@ public class Student {
                 ", gender='" + gender + '\'' +
                 ", activities=" + activities +
                 '}';
+    }
+
+    public static void printActivities(Student student) {
+        System.out.println(student.getActivities());
     }
 }

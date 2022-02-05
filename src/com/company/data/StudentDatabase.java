@@ -1,8 +1,9 @@
-package com.company;
+package com.company.data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDatabase {
 
@@ -19,4 +20,9 @@ public class StudentDatabase {
         return new ArrayList<>(Arrays.asList(st1,st2,st3,st4,st5,st6));
     }
 
+    public static Supplier<Student> getStudent=()->{
+       return StudentDatabase.getAllStudents().stream().filter(
+                (student -> student.getName().equalsIgnoreCase("steve"))
+        ).findFirst().get();
+    };
 }

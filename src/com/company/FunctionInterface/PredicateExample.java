@@ -1,6 +1,8 @@
-package com.company;
+package com.company.FunctionInterface;
 
-import java.util.ArrayList;
+import com.company.data.Student;
+import com.company.data.StudentDatabase;
+
 import java.util.List;
 import java.util.function.Predicate;
 
