@@ -8,7 +8,16 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities;
+    private Integer notebooks;
 
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, Integer notebooks) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.notebooks = notebooks;
+    }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> _activities) {
         this.name = name;
@@ -17,6 +26,7 @@ public class Student {
         this.gender = gender;
         this.activities = _activities;
     }
+
 
     public String getName() {
         return name;
@@ -58,6 +68,14 @@ public class Student {
         this.activities = activities;
     }
 
+    public Integer getNotebooks() {
+        return notebooks;
+    }
+
+    public void setNotebooks(Integer notebooks) {
+        this.notebooks = notebooks;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -66,6 +84,7 @@ public class Student {
                 ", gpa=" + gpa +
                 ", gender='" + gender + '\'' +
                 ", activities=" + activities +
+                ", notebooks=" + notebooks +
                 '}';
     }
 
